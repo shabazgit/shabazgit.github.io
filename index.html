@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website</title>
+	<style>
+		body {
+			background-color: white;
+		}
+
+		.dialog-box {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 300px;
+			height: 200px;
+			background-color: lightblue;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			text-align: center;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			animation-name: fade-in;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
+		}
+
+		@keyframes fade-in {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+	<script>
+		function displayDialog1() {
+			var dialogBox = document.createElement("div");
+			dialogBox.setAttribute("class", "dialog-box");
+			dialogBox.innerText = "Hey There! Long time no see.";
+			document.body.appendChild(dialogBox);
+			setTimeout(function() {
+				window.location.href = "page2.html";
+			}, 10000);
+		}
+
+		function displayDialog2() {
+			var dialogBox = document.createElement("div");
+			dialogBox.setAttribute("class", "dialog-box");
+			dialogBox.innerText = "It's been a rough month for me without you.";
+			document.body.appendChild(dialogBox);
+			setTimeout(function() {
+				window.location.href = "page3.html";
+			}, 20000);
+		}
+
+		function displayDialog3() {
+			var dialogBox = document.createElement("div");
+			dialogBox.setAttribute("class", "dialog-box");
+			dialogBox.innerText = "I am really sorry Ajhumma.";
+			document.body.appendChild(dialogBox);
+			setTimeout(function() {
+				window.location.href = "index.html";
+			}, 20000);
+		}
+	</script>
+</head>
+<body onload="displayDialog1()">
+</body>
+</html>
