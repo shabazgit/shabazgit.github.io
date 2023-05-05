@@ -1,75 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Website</title>
-	<style>
-		body {
-			background-color: white;
-		}
-
-		.dialog-box {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 300px;
-			height: 200px;
-			background-color: lightblue;
-			border-radius: 10px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 24px;
-			text-align: center;
-			padding: 20px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-			animation-name: fade-in;
-			animation-duration: 2s;
-			animation-fill-mode: forwards;
-			animation-delay: 0s;
-		}
-
-		@keyframes fade-in {
-			from {
-				opacity: 0;
-			}
-			to {
-				opacity: 1;
-			}
-		}
-	</style>
-	<script>
-		function displayDialog1() {
-			var dialogBox = document.createElement("div");
-			dialogBox.setAttribute("class", "dialog-box");
-			dialogBox.innerText = "Hey There! Long time no see.";
-			document.body.appendChild(dialogBox);
-			setTimeout(function() {
-				window.location.href = "page2.html";
-			}, 10000);
-		}
-
-		function displayDialog2() {
-			var dialogBox = document.createElement("div");
-			dialogBox.setAttribute("class", "dialog-box");
-			dialogBox.innerText = "It's been a rough month for me without you.";
-			document.body.appendChild(dialogBox);
-			setTimeout(function() {
-				window.location.href = "page3.html";
-			}, 20000);
-		}
-
-		function displayDialog3() {
-			var dialogBox = document.createElement("div");
-			dialogBox.setAttribute("class", "dialog-box");
-			dialogBox.innerText = "I am really sorry Ajhumma.";
-			document.body.appendChild(dialogBox);
-			setTimeout(function() {
-				window.location.href = "index.html";
-			}, 20000);
-		}
-	</script>
+	<title>WhatsApp Chat Screen</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body onload="displayDialog1()">
+<body>
+	<div class="chatbox">
+		<div class="chatbox-header">
+			<img src="profile.jpg" alt="Profile Picture">
+			<div class="chatbox-header-text">
+				<h2>Ridhhi</h2>
+				<p>Online</p>
+			</div>
+			<div class="chatbox-header-icons">
+				<i class="fa fa-search"></i>
+				<i class="fa fa-ellipsis-v"></i>
+			</div>
+		</div>
+		
+		
+		<div class="chatbox-body">
+			<div class="message sent">
+				<div class="message-content">Happy Birthday! 🎂</div>
+				<div class="message-timestamp">12:00 AM</div>
+			</div>
+			<div class="message received">
+				<div class="message-sender">Ridhhi</div>
+				<div class="message-content">Thanks ✨</div>
+				<div class="message-timestamp">12:11 AM</div>
+			</div>
+			<div class="message sent">
+				<div class="message-content">☺️</div>
+				<div class="message-timestamp">3:23 AM</div>
+			</div>
+			<div class="message received">
+				<div class="message-sender">Ridhhi</div>
+				<div class="message-content">this message was deleted</div>
+				<div class="message-timestamp">12:53 PM</div>
+			</div>
+			<div class="message received">
+				<div class="message sent">
+					<div class="message-content">?</div>
+					<div class="message-timestamp">1:35 PM</div>
+				</div>
+				<div class="message-sender">Ridhhi</div>
+				<div class="message-content">Tum kuch mere naam se order Kia tha?</div>
+				<div class="message-timestamp">1:54 PM</div>
+			</div>
+			<div class="message sent">
+				<div class="message-content">kya?kab?</div>
+				<div class="message-timestamp">2:05 PM</div>
+			</div>
+			<div class="message received">
+				<div class="message-sender">Ridhhi</div>
+				<div class="message-content">you sure?</div>
+				<div class="message-timestamp">2:10 PM</div>
+			</div>
+			<div class="message received">
+				<div class="message-sender">Ridhhi</div>
+				<div class="message-content">it was pre-paid</div>
+				<div class="message-timestamp">2:10 PM</div>
+			</div>
+			<div class="message sent">
+				<div class="message-content">Idk if it was prepaid</div>
+				<div class="message-timestamp">2:16 PM</div>
+			</div>
+			<div class="message sent">
+				<div class="message-content">Might be a gift ig</div>
+				<div class="message-timestamp">2:16 PM</div>
+			</div>
+			<div class="message received">
+				<div class="message-sender">Ridhhi</div>
+				<div class="message-content">vo tum hi bheja na?</div>
+				<div class="message-timestamp">2:17 PM</div>
+			</div>
+			
+			<div class="message received">
+				<div class="message-sender">Ridhhi</div>
+				<div class="message-content">just wanted to confirm</div>
+				<div class="message-timestamp">2:17 PM</div>
+			</div>
+			
+			<div class="message sent">
+				<div class="message-content">Ha</div>
+				<div class="message-timestamp">2:36 PM</div>
+			</div>
+			<div class="message received">
+				<div class="message-sender">Ridhhi</div>
+				<div class="message-content">Okay thanks  👍</div>
+				<div class="message-timestamp">2:39 PM</div>
+			</div>
+			<div class="message sent">
+				<div class="message-content"><a href="https://www.amazon.jobs/en/jobs/2362178/production-planning-analyst-production-planning-team">https://www.amazon.jobs/en/jobs/2362178/production-planning-analyst-production-planning-team </a></div>
+				<div class="message-timestamp">5:11 PM</div>
+			</div>
+			<div class="message sent">
+				<div class="message-content">Just wanted to you to fill out the above form Thats it no wrong intentions</div>
+				<div class="message-timestamp">10:31 AM</div>
+			</div>
+			<div class="message sent">
+				<div class="message-content">I didn't have a clue how to contact you, So sent you this</div>
+				<div class="message-timestamp">10:32 PM</div>
+			</div>
+		</div>
+		<div class="chatbox-footer">
+			<form>
+				<input type="text" placeholder="Type your message here...">
+				<button><i class="fa fa-paper-plane"></i></button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
